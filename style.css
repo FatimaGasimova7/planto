@@ -1,7 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope" ,sans-serif;
 }
 
 html {
@@ -85,16 +90,14 @@ header {
   left: 20%;
   opacity: 0.75;
   color: white;
+list-style: none;
 
 
 
-
-  a {
-    li {
-      color: white;
-      list-style: none;
-    }
-
+  li a{ 
+    color: white;
+    text-decoration: none;
+   
   }
 }
 
@@ -123,6 +126,16 @@ header {
 
 /*                          header end            */
 /*                          @media query for header  */
+
+
+
+@media  screen and (max-width:1300px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
 @media screen and (max-width: 480px) {
 
   header {
@@ -230,26 +243,34 @@ header {
 }
 
 .hero__content h1 {
-  font-size: 92px;
-  font-weight: 600;
-  margin-left: 70px;
+  font-size: 78px;
+  font-weight: 690;
+  margin-left: 20px;
+}
+ .pragraf-hero{
+   font-size: 25px;
+  opacity: 0.75;
+  border-radius: 3px;
+  width: 300px;
+  height: 50px;
+  margin-left: -11px;
 }
 
 .hero__content p {
   font-size: 25px;
   opacity: 0.75;
   border-radius: 3px;
-  width: 750px;
+  width: 600px;
   height: 50px;
-  margin-left: 70px;
+  margin-left: -11px;
 }
 
 .hero__buttons {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-top: 20px;
-  margin-left: 70px;
+  margin-top: 30px;
+  margin-left: 15px;
 }
 
 .btn {
@@ -326,13 +347,14 @@ span {
 
 .hero__card {
   grid-area: card;
-  background-image: url(img/Rectangle\ 2.svg);
+  /* background-image: url(img/Rectangle\ 2.svg); */
   background-size: cover;
   background-position: center;
   width: 512px;
   height: 644px;
   backdrop-filter: blur(10px);
-  border-radius: 30px;
+  border:2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 60px;
   padding: 30px;
   text-align: center;
   display: flex;
@@ -388,15 +410,16 @@ span {
   backdrop-filter: blur(10px);
   border-radius: 40px;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
-  width: 456px;
+  width: 396px;
   height: 250px;
-  margin-left: 300px;
+  margin-left: 230px;
   margin-top: 130px;
 
 
 }
+
 
 .avatar {
   width: 64px;
@@ -414,7 +437,7 @@ span {
 }
 
 .review__info .text {
-
+width: 310px;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -425,87 +448,7 @@ span {
 
 /* ---------@media query for section1----------- */
 
-@media screen and (max-width: 480px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 10px;
-    gap: 20px;
-  }
-
-  .hero__content h1 {
-    font-size: 28px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .hero__content p {
-    font-size: 14px;
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .hero__buttons {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-
-  .hero__image {
-    position: static;
-    height: 180px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .hero__card {
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    background-size: cover;
-    margin: 0 auto;
-  }
-
-  .hero__card img {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
-
-  .hero__card h5,
-  .hero__card h2,
-  .hero__card button {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .hero__review {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: center;
-  }
-
-  .avatar {
-    margin: 0 auto;
-  }
-
-  .review__info .text {
-    font-size: 14px;
-  }
-
-  .review__info .name {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -563,7 +506,7 @@ span {
 
   .hero__review {
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
     padding: 15px;
@@ -575,6 +518,95 @@ span {
 
   .review__info {
     text-align: center;
+  }
+}
+
+.box {
+
+  width: 100%;
+  height: 135vw;
+  background: url(img/fa0765984e44f85e1a04562f820f1492949a1257.jpg);
+  z-index: -1;
+  background-position: center;
+  background-size: cover; */
+} 
+@media screen and (max-width: 1300px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 20px;
+  }
+
+  .hero__content h1 {
+    font-size: 8px;
+
+    text-align: center;
+  }
+
+  .hero__content p {
+    font-size: 14px;
+    width: 25%;
+  
+ 
+    text-align: center;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .hero__image {
+  
+    height: 90px;
+    width: 25%;
+    background-size: cover;
+    
+    background-position: center;
+  }
+
+  .hero__card {
+    width: 50%;
+  
+    padding: 7.5px;
+    background-size: cover;
+  
+  }
+
+  .hero__card img {
+    width: 25%;
+  
+    margin-top: 0;
+  }
+
+  .hero__card h5,
+  .hero__card h2,
+  .hero__card button {
+ 
+    text-align: center;
+  }
+
+  .hero__review {
+    flex-direction: column;
+    width: 25%;
+   
+    
+    padding: 7.5px;
+    text-align: center;
+  }
+
+  .avatar {
+    margin: 0 auto;
+  }
+
+  .review__info .text {
+    font-size: 8px;
+  }
+
+  .review__info .name {
+    font-size: 10px;
   }
 }
 
